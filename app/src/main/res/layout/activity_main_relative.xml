@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/usernameEditText"
+        android:hint="Username"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mbiemri"
+        android:layout_marginTop="10dp"
+        android:id="@+id/surnameEditText"
+        android:layout_below="@+id/usernameEditText"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Paga bruto"
+        android:inputType="numberDecimal"
+        android:id="@+id/brutoEditText"
+        android:layout_below="@+id/surnameEditText"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulo"
+        android:layout_marginTop="10dp"
+        android:id="@+id/calculateButton"
+        android:layout_below="@+id/brutoEditText"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show list view"
+        android:layout_toRightOf ="@+id/calculateButton"
+        android:layout_below="@+id/brutoEditText"
+        android:layout_marginTop="10dp"
+        android:id="@+id/showListViewButton"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/resultTextView"
+        android:layout_below="@+id/calculateButton" />
+
+
+
+
+</RelativeLayout>
